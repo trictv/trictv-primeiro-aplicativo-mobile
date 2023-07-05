@@ -1,0 +1,72 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trictv.Usuarios"
+             Title="Usuários cadastrados">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Adicionar" Clicked="ToolbarItem_Clicked" IconImageSource="plus.png"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout Margin="20">
+        <CollectionView x:Name="MyUsuarios"
+                        SelectionMode="Single"
+                        BackgroundColor="#F2F2F2">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="5"
+                           Padding="10"
+                           Margin="5"
+                           BackgroundColor="#FFFFFF"
+                           HasShadow="True">
+
+                        <StackLayout Spacing="8">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="ID:"
+                                       FontSize="16"
+                                       TextColor="#333333"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Id}"
+                                       FontSize="16"
+                                       TextColor="#666666"
+                                       VerticalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Nome:"
+                                       FontSize="16"
+                                       TextColor="#333333"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Nome}"
+                                       FontSize="16"
+                                       TextColor="#666666"
+                                       VerticalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Usuário:"
+                                       FontSize="16"
+                                       TextColor="#333333"
+                                       VerticalOptions="Center" />
+                                <Label Text="{Binding Usuario}"
+                                       FontSize="16"
+                                       TextColor="#666666"
+                                       VerticalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Senha:"
+                                       FontSize="16"
+                                       TextColor="#333333"
+                                       VerticalOptions="Center" />
+                                <Entry Text="{Binding Senha}"
+                                       FontSize="16"
+                                       TextColor="#666666"
+                                       VerticalOptions="Center" IsPassword="True"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

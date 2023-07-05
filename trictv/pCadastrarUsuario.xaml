@@ -1,0 +1,37 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trictv.pCadastrarUsuario"
+             Title="Novo Registro">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Entry Placeholder="Nome"
+                   x:Name="txtNome"
+                   TextTransform="Uppercase"
+                   BackgroundColor="#F2F2F2"
+                   Margin="0,0,0,10"
+                   HeightRequest="40"/>
+
+            <Entry Placeholder="Usuário"
+                   x:Name="txtUsuario"
+                   TextTransform="Uppercase"
+                   BackgroundColor="#F2F2F2"
+                   Margin="0,0,0,10"
+                   HeightRequest="40"/>
+
+            <Entry Placeholder="Senha"
+                   x:Name="txtSenha"
+                   IsPassword="True"
+                   BackgroundColor="#F2F2F2"
+                   Margin="0,0,0,10"
+                   HeightRequest="40"/>
+
+            <Button Text="SALVAR"
+                    Clicked="BtnSalvar"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    FontSize="18"
+                    HeightRequest="50"
+                    CornerRadius="5"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
