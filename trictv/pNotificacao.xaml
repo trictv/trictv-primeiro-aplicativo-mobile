@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trictv.pNotificacao">
+    <ContentPage.Content>
+        <StackLayout Margin="0,35,0,0"
+             x:Name="stackLayout">
+            <Label Text=""
+           TextColor="Red"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+            <Button Text="criar notificação"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="OnSendClick" />
+            <Label Text="Notificação apos 10 segundos"
+           TextColor="Red"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+            <Button Text="Agendar notificação"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="OnScheduleClick" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

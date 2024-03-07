@@ -32,7 +32,7 @@ namespace trictv
             //Usuarios usas = new Usuarios();
 
             // await Navigation.PushModalAsync(new Usuarios());
-            await Navigation.PushModalAsync(new NavigationPage(new Usuarios()));
+            await Navigation.PushModalAsync(new NavigationPage(new MinhaPagina()));
 
         }
     }

@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 using SQLite;
+using trictv.Banco;
+
 namespace trictv.Classes
 {
-    public class Logim
+    public class Logim : ClasseBase
     {
+
         [PrimaryKey,AutoIncrement]
         public int Id { get; set; }
 

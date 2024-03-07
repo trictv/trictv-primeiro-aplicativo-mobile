@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:local="clr-namespace:trictv">
+
+    <Color x:Key="BackgroundColorLight">#f0f0f0</Color>
+    <Color x:Key="TextColorLight">#333333</Color>
+
+    <Color x:Key="BackgroundColorDark">#121212</Color>
+    <Color x:Key="TextColorDark">#FFFFFF</Color>
+
+    <!-- Estilos para os controles no modo claro -->
+    <Style x:Key="EntryStyleLight" TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColorLight}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColorLight}" />
+        <!-- Outros setters personalizados para o Entry no modo claro, se necessário -->
+    </Style>
+
+    <!-- Estilos para os controles no modo escuro -->
+    <Style x:Key="EntryStyleDark" TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColorDark}" />
+        <Setter Property="TextColor" Value="{StaticResource TextColorDark}" />
+        <!-- Outros setters personalizados para o Entry no modo escuro, se necessário -->
+    </Style>
+
+</ResourceDictionary>

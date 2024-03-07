@@ -1,12 +1,14 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="trictv.Usuarios"
-             Title="Usuários cadastrados">
+             Title="Usuários cadastrados"
+             BackgroundColor="#f0f0f0">
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Adicionar" Clicked="ToolbarItem_Clicked" IconImageSource="plus.png"></ToolbarItem>
+        <ToolbarItem Text="Adicionar" Clicked="ToolbarItem_Clicked" IconImageSource="plus.png" Order="Primary"></ToolbarItem>
     </ContentPage.ToolbarItems>
 
-    <StackLayout Margin="20">
+    <StackLayout Margin="20" Spacing="10">
         <CollectionView x:Name="MyUsuarios"
                         SelectionMode="Single"
                         BackgroundColor="#F2F2F2">
@@ -53,7 +55,7 @@
                                        VerticalOptions="Center" />
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                                 <Label Text="Senha:"
                                        FontSize="16"
                                        TextColor="#333333"
@@ -61,7 +63,8 @@
                                 <Entry Text="{Binding Senha}"
                                        FontSize="16"
                                        TextColor="#666666"
-                                       VerticalOptions="Center" IsPassword="True"/>
+                                       VerticalOptions="Center"
+                                       IsPassword="True"/>
                             </StackLayout>
                         </StackLayout>
                     </Frame>

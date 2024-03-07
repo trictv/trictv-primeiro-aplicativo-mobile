@@ -22,7 +22,7 @@ namespace trictv
             {
                 base.OnAppearing();
                 List<Logim> list = await App.MyTabelaLogim.Logims();
-                MyUsuarios.ItemsSource = await App.MyTabelaLogim.Logims();
+                MyUsuarios.ItemsSource = await Logim.GetLista_Async<Logim>();
                 
             }
             catch { }
